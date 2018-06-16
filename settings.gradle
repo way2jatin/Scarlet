@@ -1,4 +1,4 @@
-include ':scarlet-core'
+include ':scarlet-core', ':scarlet-websocket-event-source-android'
 include ':scarlet-core-internal'
 include ':state-machine'
 include ':scarlet'
