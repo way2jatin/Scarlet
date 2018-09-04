@@ -61,7 +61,7 @@ gdaxService.observeTicker()
 ~~~
 
 ###  Android
-Scarlet is driven by a [StateMachine](https://github.com/Tinder/StateMachine).
+Scarlet is driven by a [StateMachine][state-machine].
 
 <img width="600 px" src="/example/scarlet-state-machine.png"/>
 
@@ -69,29 +69,29 @@ TODO
 
 Download
 --------
-While we are working on Bintray support, Scarlet is available via [JitPack](jitpack).
+While we are working on Bintray support, Scarlet is available via [JitPack][jitpack].
 
 ##### Maven:
 ```xml
 <repository>
-  <id>jitpack.io</id>
-  <url>https://jitpack.io</url>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
 </repository>
 <dependency>
-  <groupId>com.github.tinder.scarlet</groupId>
-  <artifactId>scarlet</artifactId>
-  <version>0.1.2</version>
+    <groupId>com.github.tinder.scarlet</groupId>
+    <artifactId>scarlet</artifactId>
+    <version>0.1.4</version>
 </dependency>
 ```
 
 ##### Gradle:
 ```groovy
 repositories {
-  // ...
-  maven { url "https://jitpack.io" }
+    // ...
+    maven { url "https://jitpack.io" }
 }
 
-implementation 'com.github.tinder.scarlet:scarlet:0.1.2'
+implementation 'com.github.tinder.scarlet:scarlet:0.1.4'
 ```
 
 ### Plug-in Roadmap
@@ -109,7 +109,7 @@ implementation 'com.github.tinder.scarlet:scarlet:0.1.2'
 `StreamAdapter.Factory`
 - [x] `RxJava2`
 - [x] `RxJava1`
-- [ ] `Kotlin Coroutine`
+- [x] `Kotlin Coroutine`
 
 `Lifecycle`
 - [x] `AndroidLifecycle`
@@ -153,5 +153,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  [demo-app]: /demo/src/main/java/com/tinder/app
  [tutorial]: https://tech.gotinder.com/taming-websocket-with-scarlet/
  [slides]: https://speakerdeck.com/zhxnlai/taming-websocket-with-scarlet
- [kotliners]:https://www.conferenceforkotliners.com/
- [jitpack]: https://jitpack.io/
+ [kotliners]: https://www.conferenceforkotliners.com/
+ [state-machine]: https://github.com/Tinder/StateMachine
+ [jitpack]: https://jitpack.io/#tinder/scarlet
